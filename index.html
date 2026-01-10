@@ -9,21 +9,29 @@
 </head>
 <body>
     <div>
-        <ul>
-            <li>Calling Card</li>
-            <li>Highlights</li>
-            <li>The Hares</li>
-            <li>Contact</li>
+        <ul class="tabs">
+            <li data-tab-target="#calling" class="active tab">Calling Card</li>
+            <li data-tab-target="#highlights" class="tab">Highlights</li>
+            <li data-tab-target="#hares" class="tab">The Hares</li>
+            <li data-tab-target="#contact" class="tab">Contact</li>
         </ul>
     </div>
-    <div>
-        <h1>Welcome to the Gentle House</h1>
-    </div>
-    <div>
-        <section>
+
+    <div class="tab-content">
+        <div id="calling" data-tab-content class="active">
+            <h1>Welcome to the Gentle House</h1>
             <h2>A little bit tricky~</h2>
             <p>Escorting, search and retrieve, Ethereal hunting. We can do it all!</p>
-        </section>
+        </div>
+        <div id="highlights" data-tab-content>
+            <h1>Highlights</h1>
+        </div>
+        <div id="hares" data-tab-content>
+            <h1>The Hares</h1>
+        </div>
+        <div id="contact" data-tab-content>
+            <h1>Contact</h1>
+        </div>
     </div>
 </body>
 </html>
